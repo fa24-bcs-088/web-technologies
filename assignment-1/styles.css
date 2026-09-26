@@ -1,0 +1,58 @@
+.cv-box {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #bcc0d6dd;
+  border-radius: 8px;
+}
+
+.profile-img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+h1 {
+  text-align: center;
+  color: #2019d5;
+}
+
+.job {
+  text-align: center;
+  color: #6c6a96;
+}
+
+#contact {
+  text-align: center;
+  color: #6e68d0;
+}
+
+nav {
+  background-color: #a1a0b3;
+  text-align: center;
+  margin-top: 20px;
+}
+
+h2 {
+  color: #2019d5;
+}
+h3 {
+  color: #434781;
+}
+hr {
+  background-color: #6b6a85;
+  height: 1.5px;
+}
+
+.projects-list li span {
+  color: #13093d;
+  text-decoration: underline;
+}
+
+.technologies {
+  color: #3b33df;
+}
+.skills-list li span {
+  font-weight: bold;
+  color: #102e44;
+}
