@@ -30,3 +30,44 @@ main:has(#cat-footwear:checked) .col:not([data-category="footwear"]),
 main:has(#cat-accessories:checked) .col:not([data-category="accessories"]) {
   display: none;
 }
+/* ===== TASK 2: product layout (BP = 688px) ===== */
+.product-layout {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "image"
+    "details"
+    "description";
+}
+
+.product-image {
+  grid-area: image;
+}
+.product-details {
+  grid-area: details;
+}
+.product-description {
+  grid-area: description;
+}
+
+.product-details {
+  background: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+}
+
+@media (min-width: 688px) {
+  .product-layout {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "image       details"
+      "description description";
+    align-items: start;
+  }
+  .product-details {
+    position: sticky;
+    top: 78px; /* (88 mod 40) + 70 */
+  }
+}
