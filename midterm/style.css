@@ -1,0 +1,14 @@
+.banner img {
+  object-position: left top; /* desktop: faces on the left */
+}
+
+@media (max-width: 767px) {
+  .banner img {
+    object-position: 65% top; /* phone: shift the crop */
+  }
+}
+
+.card-img-top {
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
