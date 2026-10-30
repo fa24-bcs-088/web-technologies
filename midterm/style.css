@@ -12,3 +12,21 @@
   aspect-ratio: 4 / 5;
   object-fit: cover;
 }
+:root {
+  --accent: hsl(256, 70%, 45%);
+} /* hsl(H, 70%, 45%) with H = 256 */
+
+/* Selected look */
+.filter-bar .btn-check:checked + .btn {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+/* If radio X is checked, hide every .col that is NOT category X */
+main:has(#cat-tops:checked) .col:not([data-category="tops"]),
+main:has(#cat-bottoms:checked) .col:not([data-category="bottoms"]),
+main:has(#cat-footwear:checked) .col:not([data-category="footwear"]),
+main:has(#cat-accessories:checked) .col:not([data-category="accessories"]) {
+  display: none;
+}

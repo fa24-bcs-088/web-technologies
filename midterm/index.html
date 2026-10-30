@@ -66,8 +66,57 @@
     <!-- PRODUCT GRID: 1 column on phone, 2 on tablet, 4 on desktop -->
     <main class="container mt-4">
       <h2 class="mb-4">Featured Products</h2>
+      <div class="filter-bar d-flex flex-wrap gap-2 mb-3">
+        <input
+          type="radio"
+          class="btn-check"
+          name="category"
+          id="cat-all"
+          value="all"
+          checked
+        />
+        <label class="btn btn-outline-dark" for="cat-all">All</label>
+
+        <input
+          type="radio"
+          class="btn-check"
+          name="category"
+          id="cat-tops"
+          value="tops"
+        />
+        <label class="btn btn-outline-dark" for="cat-tops">Tops</label>
+
+        <input
+          type="radio"
+          class="btn-check"
+          name="category"
+          id="cat-bottoms"
+          value="bottoms"
+        />
+        <label class="btn btn-outline-dark" for="cat-bottoms">Bottoms</label>
+
+        <input
+          type="radio"
+          class="btn-check"
+          name="category"
+          id="cat-footwear"
+          value="footwear"
+        />
+        <label class="btn btn-outline-dark" for="cat-footwear">Footwear</label>
+
+        <input
+          type="radio"
+          class="btn-check"
+          name="category"
+          id="cat-accessories"
+          value="accessories"
+        />
+        <label class="btn btn-outline-dark" for="cat-accessories"
+          >Accessories</label
+        >
+      </div>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
-        <div class="col">
+        <div class="col" data-category="tops">
           <div class="card h-100">
             <a href="product.html"
               ><img
@@ -82,7 +131,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col" data-category="bottoms">
           <div class="card h-100">
             <a href="product.html"
               ><img
@@ -97,7 +146,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col" data-category="footwear">
           <div class="card h-100">
             <a href="product.html"
               ><img
@@ -112,7 +161,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col" data-category="tops">
           <div class="card h-100">
             <a href="product.html"
               ><img
@@ -127,7 +176,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col" data-category="tops">
           <div class="card h-100">
             <a href="product.html"
               ><img
@@ -142,7 +191,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col" data-category="footwear">
           <div class="card h-100">
             <a href="product.html"
               ><img
@@ -157,7 +206,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col" data-category="tops">
           <div class="card h-100">
             <a href="product.html"
               ><img
@@ -172,7 +221,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col" data-category="accessories">
           <div class="card h-100">
             <a href="product.html"
               ><img
